@@ -1,9 +1,9 @@
-.u-section-1 {
+ .u-section-1 {
   background-image: none;
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 759px;
+  min-height: 621px;
 }
 
 .u-section-1 .u-image-1 {
@@ -18,14 +18,15 @@
   margin: -168px auto 0 206px;
 }
 
-.u-section-1 .u-text-2 {
-  letter-spacing: 1px;
-  margin: 112px auto 0 206px;
+.u-section-1 .u-image-2 {
+  width: 168px;
+  height: 224px;
+  margin: 112px auto 0 30px;
 }
 
-.u-section-1 .u-btn-1 {
-  margin: -346px auto 60px 30px;
-  padding: 106px 59px 107px;
+.u-section-1 .u-text-2 {
+  letter-spacing: 1px;
+  margin: -224px auto 60px 206px;
 }
 
 @media (max-width: 1199px) {
