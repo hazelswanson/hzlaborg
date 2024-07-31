@@ -10,7 +10,39 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 6.14.4, nicepage.com">
-    
+    <style>
+      /* Define the updated jumping animation */
+      @keyframes jump {
+          0%, 100% {
+              transform: translateY(0) scaleY(1);
+          }
+          25% {
+              transform: translateY(-20px) scaleY(1);
+          }
+          50% {
+              transform: translateY(-40px) scaleY(1);
+          }
+          75% {
+              transform: translateY(-20px) scaleY(1);
+          }
+      }
+      
+      /* Define the squish animation */
+      @keyframes squish {
+          0%, 100% {
+              transform: scaleY(1);
+          }
+          50% {
+              transform: scaleY(0.8);
+          }
+      }
+      
+      /* Apply the combined jumping, bouncing, and squish animation to the image */
+      .jumping-image {
+          animation: jump 1s cubic-bezier(0.5, 0.05, 0.1, 0.95) infinite, squish 0.5s cubic-bezier(0.5, 0.05, 0.1, 0.95) infinite;
+          transform-origin: center bottom;
+      }
+  </style>
     
     
     
@@ -65,7 +97,7 @@
                 <div class="u-container-layout u-container-layout-3">
                   <div class="custom-expanded u-border-20 u-border-custom-color-2 u-container-style u-custom-color-3 u-group u-shape-rectangle u-group-2">
                     <div class="u-container-layout u-container-layout-4">
-                      <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/20231007_135431.jpg" alt="" data-image-width="168" data-image-height="168">
+                      <img class="u-image u-image-default u-preserve-proportions u-image-2 jumping-image" src="images/20231007_135431.jpg" alt="" data-image-width="168" data-image-height="168">
                       <p class="u-text u-text-custom-color-4 u-text-3"> hiii this is my silly pawsome website!!!! HZLab.org!!!!!!! this website is self-hosted off of a docker container on my cute little server. i was also wired on Adderall n made the font this site uses in a single evening (painstakingly, hand-drawn, ouwch,,) i hope we can be friends ^w^!!!</p>
                       <p class="u-text u-text-custom-color-4 u-text-4"> im hazel swanson, aspiring network security specialist n also the &nbsp;Dog. i love doing little projects (like this website) that force me to learn the innerworkings n fundamentals needed to manage network environments!!<br>
                       </p>
